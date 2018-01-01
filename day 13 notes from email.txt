@@ -1,0 +1,307 @@
+// part 1
+
+fetch("http://adventofcode.com/2017/day/13/input",
+{credentials:"include"}).then(response => response.text()).then(text =>
+   text.replace(/\n$/).split("\n").map(r => r.split(": ").map(n =>
+parseInt(n, 10))).map(r => ({d:r[0],r:r[1]}))
+   .filter(l => l.d%((l.r - 1)*2) == 0).map(l => l.d * l.r).reduce((a,e,l)
+=> a+e,0)
+).then(console.log)
+
+
+fetch("http://adventofcode.com/2017/day/13/input",
+{credentials:"include"}).then(response => response.text()).then(text =>
+   text.replace(/\n$/).split("\n").map(r => r.split(": ").map(n =>
+parseInt(n, 10))).map(r => ({d:r[0],r:r[1]}))
+   .filter(l => l.d%((l.r - 1)*2) == 0).map(l => l.d * l.r).reduce((a,e,l)
+=> a+e,0)
+).then(console.log)
+Promise { <state>: "pending" }
+2508
+
+
+// part 2
+
+input.filter(l => (l.d - delay)%((l.r - 1)*2) == 0).map(l => l.d *
+l.r).reduce((a,e,l) => a+e,0)
+
+
+var d = 0;
+while (d < 1000000) {
+   if ((delay => input.filter(l => (l.d + delay)%((l.r - 1)*2) == 0).map(l
+=> l.d * l.r).reduce((a,e,l) => a+e,0))(d) == 0) {
+     console.log(d);
+     break;
+   }
+   d++;
+}
+
+
+var d = 0;
+while (d < 1000000) {
+   if ((delay => input.filter(l => (l.d + delay)%((l.r - 1)*2) == 0).map(l
+=> l.d * l.r).reduce((a,e,l) => a+e,0))(d) == 0) {
+     console.log(d);
+     break;
+   }
+   d++;
+}
+11596 => too low...
+
+// part 1
+
+fetch("http://adventofcode.com/2017/day/13/input",
+{credentials:"include"}).then(response => response.text()).then(text =>
+   text.replace(/\n$/).split("\n").map(r => r.split(": ").map(n =>
+parseInt(n, 10))).map(r => ({d:r[0],r:r[1]}))
+   .filter(l => l.d%((l.r - 1)*2) == 0).map(l => l.d * l.r).reduce((a,e,l)
+=> a+e,0)
+).then(console.log)
+
+
+fetch("http://adventofcode.com/2017/day/13/input",
+{credentials:"include"}).then(response => response.text()).then(text =>
+   text.replace(/\n$/).split("\n").map(r => r.split(": ").map(n =>
+parseInt(n, 10))).map(r => ({d:r[0],r:r[1]}))
+   .filter(l => l.d%((l.r - 1)*2) == 0).map(l => l.d * l.r).reduce((a,e,l)
+=> a+e,0)
+).then(console.log)
+Promise { <state>: "pending" }
+2508
+
+
+// part 2
+
+input.filter(l => (l.d - delay)%((l.r - 1)*2) == 0).map(l => l.d *
+l.r).reduce((a,e,l) => a+e,0)
+
+
+(() => {
+   var d = 0;
+   while (d < 1000000) {
+     if ((delay => input.filter(l => (l.d + delay)%((l.r - 1)*2) == 0).map(l
+=> l.d * l.r).reduce((a,e,l) => a+e,0))(d) == 0) {
+       console.log(d);
+       break;
+     }
+     d++;
+   }
+})()
+
+var d = 0;
+while (d < 1000000) {
+   if ((delay => input.filter(l => (l.d + delay)%((l.r - 1)*2) == 0).map(l
+=> l.d * l.r).reduce((a,e,l) => a+e,0))(d) == 0) {
+     console.log(d);
+     break;
+   }
+   d++;
+}
+11596 => too low...
+
+(delay => input.filter(l => (l.d + delay)%((l.r - 1)*2) == 0).map(l => l.d
+* l.r).reduce((a,e,l) => a+e,0))(d)
+
+(delay => input.filter(l => (l.d + delay)%((l.r - 1)*2) == 0).length)(d)
+
+var d = 0;
+while (d < 100000000) {
+   if ((delay => input.filter(l => (l.d + delay)%((l.r - 1)*2) ==
+0).length)(d) == 0) {
+     console.log(d);
+     break;
+   }
+   d++;
+}
+
+var input; fetch("http://adventofcode.com/2017/day/13/input",
+{credentials:"include"}).then(response => response.text()).then(text =>
+   text.replace(/\n$/).split("\n").map(r => r.split(": ").map(n =>
+parseInt(n, 10))).map(r => ({d:r[0],r:r[1]}))
+).then(i => { input = i; }
+).then(console.log);
+
+
+
+var d = 0;
+while (d < 100000000) {
+   if ((delay => input.filter(l => (l.d + delay)%((l.r - 1)*2) ==
+0).length)(d) == 0) {
+     console.log(d);
+     break;
+   }
+   d++;
+}
+3913186
+
+// part 1
+
+fetch("http://adventofcode.com/2017/day/13/input",
+{credentials:"include"}).then(response => response.text()).then(text =>
+   text.replace(/\n$/).split("\n").map(r => r.split(": ").map(n =>
+parseInt(n, 10))).map(r => ({d:r[0],r:r[1]}))
+   .filter(l => l.d%((l.r - 1)*2) == 0).map(l => l.d * l.r).reduce((a,e,l)
+=> a+e,0)
+).then(console.log)
+
+
+fetch("http://adventofcode.com/2017/day/13/input",
+{credentials:"include"}).then(response => response.text()).then(text =>
+   text.replace(/\n$/).split("\n").map(r => r.split(": ").map(n =>
+parseInt(n, 10))).map(r => ({d:r[0],r:r[1]}))
+   .filter(l => l.d%((l.r - 1)*2) == 0).map(l => l.d * l.r).reduce((a,e,l)
+=> a+e,0)
+).then(console.log)
+Promise { <state>: "pending" }
+2508
+
+
+// part 2
+
+input.filter(l => (l.d - delay)%((l.r - 1)*2) == 0).map(l => l.d *
+l.r).reduce((a,e,l) => a+e,0)
+
+
+(() => {
+   var d = 0;
+   while (d < 1000000) {
+     if ((delay => input.filter(l => (l.d + delay)%((l.r - 1)*2) == 0).map(l
+=> l.d * l.r).reduce((a,e,l) => a+e,0))(d) == 0) {
+       console.log(d);
+       break;
+     }
+     d++;
+   }
+})()
+
+var d = 0;
+while (d < 1000000) {
+   if ((delay => input.filter(l => (l.d + delay)%((l.r - 1)*2) == 0).map(l
+=> l.d * l.r).reduce((a,e,l) => a+e,0))(d) == 0) {
+     console.log(d);
+     break;
+   }
+   d++;
+}
+11596 => too low...
+
+(delay => input.filter(l => (l.d + delay)%((l.r - 1)*2) == 0).map(l => l.d
+* l.r).reduce((a,e,l) => a+e,0))(d)
+
+(delay => input.filter(l => (l.d + delay)%((l.r - 1)*2) == 0).length)(d)
+
+var d = 0;
+while (d < 100000000) {
+   if ((delay => input.filter(l => (l.d + delay)%((l.r - 1)*2) ==
+0).length)(d) == 0) {
+     console.log(d);
+     break;
+   }
+   d++;
+}
+
+var input; fetch("http://adventofcode.com/2017/day/13/input",
+{credentials:"include"}).then(response => response.text()).then(text =>
+   text.replace(/\n$/).split("\n").map(r => r.split(": ").map(n =>
+parseInt(n, 10))).map(r => ({d:r[0],r:r[1]}))
+).then(i => { input = i; }
+).then(console.log);
+
+
+
+var d = 0;
+while (d < 100000000) {
+   if ((delay => input.filter(l => (l.d + delay)%((l.r - 1)*2) ==
+0).length)(d) == 0) {
+     console.log(d);
+     break;
+   }
+   d++;
+}
+3913186
+
+// part 1
+
+fetch("http://adventofcode.com/2017/day/13/input",
+{credentials:"include"}).then(response => response.text()).then(text =>
+   text.replace(/\n$/).split("\n").map(r => r.split(": ").map(n =>
+parseInt(n, 10))).map(r => ({d:r[0],r:r[1]}))
+   .filter(l => l.d%((l.r - 1)*2) == 0).map(l => l.d * l.r).reduce((a,e,l)
+=> a+e,0)
+).then(console.log)
+
+
+fetch("http://adventofcode.com/2017/day/13/input",
+{credentials:"include"}).then(response => response.text()).then(text =>
+   text.replace(/\n$/).split("\n").map(r => r.split(": ").map(n =>
+parseInt(n, 10))).map(r => ({d:r[0],r:r[1]}))
+   .filter(l => l.d%((l.r - 1)*2) == 0).map(l => l.d * l.r).reduce((a,e,l)
+=> a+e,0)
+).then(console.log)
+Promise { <state>: "pending" }
+2508
+
+
+// part 2
+
+input.filter(l => (l.d - delay)%((l.r - 1)*2) == 0).map(l => l.d *
+l.r).reduce((a,e,l) => a+e,0)
+
+
+(() => {
+   var d = 0;
+   while (d < 1000000) {
+     if ((delay => input.filter(l => (l.d + delay)%((l.r - 1)*2) == 0).map(l
+=> l.d * l.r).reduce((a,e,l) => a+e,0))(d) == 0) {
+       console.log(d);
+       break;
+     }
+     d++;
+   }
+})()
+
+var d = 0;
+while (d < 1000000) {
+   if ((delay => input.filter(l => (l.d + delay)%((l.r - 1)*2) == 0).map(l
+=> l.d * l.r).reduce((a,e,l) => a+e,0))(d) == 0) {
+     console.log(d);
+     break;
+   }
+   d++;
+}
+11596 => too low...
+
+(delay => input.filter(l => (l.d + delay)%((l.r - 1)*2) == 0).map(l => l.d
+* l.r).reduce((a,e,l) => a+e,0))(d)
+
+(delay => input.filter(l => (l.d + delay)%((l.r - 1)*2) == 0).length)(d)
+
+var d = 0;
+while (d < 100000000) {
+   if ((delay => input.filter(l => (l.d + delay)%((l.r - 1)*2) ==
+0).length)(d) == 0) {
+     console.log(d);
+     break;
+   }
+   d++;
+}
+
+var input; fetch("http://adventofcode.com/2017/day/13/input",
+{credentials:"include"}).then(response => response.text()).then(text =>
+   text.replace(/\n$/).split("\n").map(r => r.split(": ").map(n =>
+parseInt(n, 10))).map(r => ({d:r[0],r:r[1]}))
+).then(i => { input = i; }
+).then(console.log);
+
+
+
+var d = 0;
+while (d < 100000000) {
+   if ((delay => input.filter(l => (l.d + delay)%((l.r - 1)*2) ==
+0).length)(d) == 0) {
+     console.log(d);
+     break;
+   }
+   d++;
+}
+3913186

@@ -1,0 +1,174 @@
+[...(function* (c) { for (let i = 0; i < c; i++) yield i; })(10)]
+
+[...(function* (c) { for (let i = 0; i < c; i++) yield i; })(10)].map(i =>
+"flqrgnkx-" + i).forEach(e => console.log(e))
+
+
+
+(() => {
+   const div = 2147483647;
+   var generator = function* (factor, start, criteria) { var prev = start;
+while(true) { yield (prev = (prev * factor) % div); } };
+   var ga = generator(16807, 65, 1);
+   var gb = generator(48271, 8921, 1);
+   for (let i = 0; i < 5; i++) {
+console.log(ga.next().value, gb.next().value); }
+
+})()
+
+
+(() => {
+   const div = 2147483647;
+   var generator = function* (factor, start, criteria) {
+     var prev = start;
+     while(true) {
+       let value = (prev * factor) % div;
+       if ((value % criteria) == 0) {
+         yield value;
+       }
+       prev = value;
+     }
+   };
+   var ga = generator(16807, 65, 1);
+   var gb = generator(48271, 8921, 1);
+   var c = 0;
+   for (let i = 0; i < 40000000; i++) {
+     // console.log(ga.next().value, gb.next().value);
+     if ((ga.next().value % 65536) == (gb.next().value % 65536)) {
+       c++;
+     }
+   }
+   console.log(c);
+})()
+
+
+(() => {
+   const div = 2147483647;
+   var generator = function* (factor, start, criteria) {
+     var prev = start;
+     while(true) {
+       let value = (prev * factor) % div;
+       if ((value % criteria) == 0) {
+         yield value;
+       }
+       prev = value;
+     }
+   };
+   var ga = generator(16807, 65, 1);
+   var gb = generator(48271, 8921, 1);
+   var c = 0;
+   for (let i = 0; i < 10; i++) {
+     console.log(ga.next().value, gb.next().value);
+     if ((ga.next().value % 65536) == (gb.next().value % 65536)) {
+       c++;
+     }
+   }
+   console.log(c);
+})()
+
+(() => {
+   const div = 2147483647;
+   var generator = function* (factor, start, criteria) {
+     var prev = start;
+     while(true) {
+       let value = (prev * factor) % div;
+       if ((value % criteria) == 0) {
+         yield value;
+       }
+       prev = value;
+     }
+   };
+   var ga = generator(16807, 65, 1);
+   var gb = generator(48271, 8921, 1);
+   var c = 0;
+   for (let i = 0; i < 10; i++) {
+     console.log(ga.next().value, gb.next().value);
+     if ((ga.next().value % 65536) == (gb.next().value % 65536)) {
+       c++;
+     }
+   }
+   console.log(c);
+})()
+
+
+(() => {
+   const div = 2147483647;
+   var generator = function* (factor, start, criteria) {
+     let prev = start;
+     while(true) {
+       let value = (prev * factor) % div;
+       if ((value % criteria) == 0) {
+         yield value;
+       }
+       prev = value;
+     }
+   };
+   var ga = generator(16807, 65, 4);
+   var gb = generator(48271, 8921, 8);
+   var c = 0;
+   for (let i = 0; i < 5000000; i++) {
+     //console.log("a: " + ga.next().value);
+     //console.log("b: " + gb.next().value);
+     if ((ga.next().value % 65536) == (gb.next().value % 65536)) {
+       c++;
+     }
+   }
+   console.log(c);
+})();
+
+
+(() => {
+   const div = 2147483647;
+   var generator = function* (factor, start, criteria) {
+     let prev = start;
+     while(true) {
+       let value = (prev * factor) % div;
+       if ((value % criteria) == 0) {
+         yield value;
+       }
+       prev = value;
+     }
+   };
+   var ga = generator(16807, 65, 4);
+   var gb = generator(48271, 8921, 8);
+   var c = 0;
+   for (let i = 0; i < 5000000; i++) {
+     //console.log("a: " + ga.next().value);
+     //console.log("b: " + gb.next().value);
+     if ((ga.next().value % 65536) == (gb.next().value % 65536)) {
+       c++;
+     }
+
+     if (i % 100000 == 0) console.log(i);
+   }
+   console.log(c);
+})();
+
+(() => {
+   const div = 2147483647;
+   var generator = function* (factor, start, criteria) {
+     let prev = start;
+     while(true) {
+       let value = (prev * factor) % div;
+       if ((value % criteria) == 0) {
+         yield value;
+       }
+       prev = value;
+     }
+   };
+   var ga = generator(16807, 277, 4);
+   var gb = generator(48271, 349, 8);
+   var c = 0;
+   for (let i = 0; i < 5000000; i++) {
+     //console.log("a: " + ga.next().value);
+     //console.log("b: " + gb.next().value);
+     if ((ga.next().value % 65536) == (gb.next().value % 65536)) {
+       c++;
+     }
+
+     if (i % 100000 == 0) console.log(i);
+   }
+   console.log(c);
+})();
+
+320

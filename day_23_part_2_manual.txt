@@ -1,0 +1,90 @@
+#set b 93
+#set c b
+
+#jnz a 2 => 5
+#jnz 1 5 => 9
+#if (a != 0) { 5:
+#
+#  #mul b 100
+#  #sub b -100000
+#  #b = b * 100 + 100000
+#
+#  #set c b
+#  #sub c -17000
+#  #c = b + 17000
+#}
+
+b = 93 * 100 + 100000 = 109300
+c = b + 17000 = 126300
+
+do { 9:
+
+  #set f 1
+  f = 1
+
+  #set d 2
+  d = 2
+
+  do { #11:
+
+    #set e 2
+    e = 2
+
+    do { #12:
+
+      #set g d
+      #mul g e
+      #sub g b
+      #g = d * e - b
+      #jnz g 2 => 17
+
+      if (d * e == b) {
+        #set f 0
+        f = 0
+      } #17:
+
+      #sub e -1
+      e++
+
+      #set g e
+      #sub g b
+      #g = e - b
+      #jnz g -8 => 12
+
+    } while (e != b)
+
+    #sub d -1
+    d++
+
+    #set g d
+    #sub g b
+    #g = d - b
+    #jnz g -13 => 11
+
+  } while (d != b)
+
+  #jnz f 2 => 27
+  if (f == 0) {
+    #sub h -1
+    h++
+  } 27:
+
+  #set g b
+  #sub g c
+  #g = b - c
+  #jnz g 2 => 31
+
+  if (b == c) {
+    #jnz 1 3 => 33
+    #goto :end
+    break
+  } 31:
+
+  #sub b -17
+  b += 17
+
+  #jnz 1 -23 => 9
+} while (true)
+
+#33: end
+#:end

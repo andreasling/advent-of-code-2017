@@ -1,0 +1,51 @@
+const s2p = s => s.split(",").map(d => ({
+n:[0,1,-1],
+ne:[1,0,-1],
+se:[1,-1,0],
+s:[0,-1,1],
+sw:[-1,0,1],
+nw:[-1,1,0]
+}[d])).reduce((a,d,ds) => [a[0]+d[0],a[1]+d[1],a[2]+d[2]], [0,0,0]);
+
+const p2d = p => (Math.abs(p[0]) + Math.abs(p[1]) + Math.abs(p[2]))/2;
+
+const s2d = s => p2d(s2p(s));
+
+console.log(s2d("ne,ne,ne"));
+console.log(s2d("ne,ne,sw,sw"));
+console.log(s2d("ne,ne,s,s"));
+console.log(s2d("se,sw,se,sw,sw"));
+
+759
+
+part 2:
+
+
+
+const s2p = s => s.split(",").map(d => ({
+n:[0,1,-1],
+ne:[1,0,-1],
+se:[1,-1,0],
+s:[0,-1,1],
+sw:[-1,0,1],
+nw:[-1,1,0]
+}[d])).reduce((a,d,ds) => [a[0]+d[0],a[1]+d[1],a[2]+d[2]], [0,0,0]);
+
+const p2d = p => (Math.abs(p[0]) + Math.abs(p[1]) + Math.abs(p[2]))/2;
+
+const s2d = s => p2d(s2p(s));
+
+const d_max = s => {
+
+   var max = 0;
+
+   var p = s.split(",");
+
+   for (l = 1; l <= p.length; l++) {
+     var s2 = p.filter((c, j) => j < l).join(",");
+
+     max = Math.max(max, s2d(s2));
+   }
+
+   return max;
+};
